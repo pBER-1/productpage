@@ -1,0 +1,10 @@
+body {
+  font-family: 'Roboto Condensed';
+}
+.wrapper {
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
