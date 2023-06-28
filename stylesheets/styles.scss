@@ -261,8 +261,7 @@ $breakpoint-small: 425px;
 
 .product-main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   padding-bottom: 40px;
   background: rgb(236, 236, 236);
   background: linear-gradient(
@@ -588,19 +587,18 @@ $breakpoint-small: 425px;
 
   .more-display {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
     width: 100%;
 
     @media (max-width: $breakpoint-mobile) {
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: repeat(3, 1fr);
       :nth-child(4) {
         display: none;
       }
     }
     @media (max-width: $breakpoint-small) {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr);
       grid-gap: 10px;
       :nth-child(3) {
         display: none;
@@ -914,16 +912,13 @@ footer {
   .footer-container {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     border-bottom: 1px solid #444444;
 
     @media (max-width: $breakpoint-mobile) {
       padding-bottom: 60px;
-      grid-template-columns: 1fr 1fr;
-      -ms-grid-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      -ms-grid-rows: 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
       align-items: center;
       .footer-list {
         text-align: center;
@@ -932,9 +927,7 @@ footer {
 
     @media (max-width: $breakpoint-small) {
       grid-template-columns: auto;
-      -ms-grid-columns: auto;
       grid-template-rows: auto auto auto auto;
-      -ms-grid-rows: auto auto auto auto;
     }
   }
 
